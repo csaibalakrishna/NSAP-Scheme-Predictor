@@ -45,7 +45,7 @@ The dataset contains information on:
 ![Experiment Summary](./Screenshot%202025-07-29%20153115.png)
 
 ### ⚙️ Pipeline Leaderboard
-![Leaderboard](./Screenshot%2025-07-29%153212.png)
+![Leaderboard](./Screenshot%202025-07-29%20153212.png)
 
 ### 📊 Bottom Pipelines
 ![Pipeline Comparison](./Screenshot%202025-07-29%20153245.png)
