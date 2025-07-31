@@ -2,6 +2,8 @@
 
 This project predicts the **eligible scheme code** for applicants under the **National Social Assistance Programme (NSAP)** using district-wise data and a trained machine learning model. It simplifies eligibility checking using an easy-to-use web interface.
 
+# ⚠️  The machine learning model is currently not serving predictions due to excessive consumption of Cloud Hosted Units (CHUs) on IBM Cloud. Please use the sample dataset and UI flow for demonstration purposes only.
+
 ## 🚀 Project Features
 
 - 🧠 Built with IBM Watson AutoAI (Snap Random Forest Classifier)
