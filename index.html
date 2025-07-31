@@ -24,22 +24,21 @@
 
   <!-- Landing Page Section -->
   <section class="min-h-screen flex flex-col items-center justify-center text-center px-4">
-    <p class="text-lg text-gray-700 max-w-xl mb-4"><h1> ⚠️ **Disclaimer:** The machine learning model is currently not serving predictions due to excessive consumption of Cloud Hosted Units (CHUs) on IBM Cloud. Please use the sample dataset and UI flow for demonstration purposes only.
-    </h1></p>
-    <h2> class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">NSAP Scheme Predictor</h2>
+    <p class="text-sm text-red-700 bg-red-100 px-4 py-2 rounded mb-4 border border-red-300 max-w-xl">
+      ⚠️ <strong>Disclaimer:</strong> The machine learning model is currently not serving predictions due to excessive consumption of Cloud Hosted Units (CHUs) on IBM Cloud. Please use the sample dataset and UI flow for demonstration purposes only.
+    </p>
+
+    <h2 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">NSAP Scheme Predictor</h2>
     <p class="text-lg text-gray-700 max-w-xl mb-4">
       This AI-powered tool assists government agencies in quickly identifying the most suitable social welfare scheme
       for an applicant based on their demographic and regional data.
     </p>
 
-    <!-- Download button for sample dataset -->
     <a href="NSAP_sample.csv" download
        class="mb-4 inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded shadow transition">
       📥 Download Sample Dataset
     </a>
-     <p class="text-lg text-gray-700 max-w-xl mb-4">
-      Use this dataset for reference before submitting input.
-    </p>
+    <p class="text-sm text-gray-600 mb-6">Use this dataset for reference before submitting input.</p>
 
     <button onclick="document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' })"
             class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg shadow-lg transition">
@@ -53,36 +52,21 @@
       <h2 class="text-2xl font-bold text-center mb-6 text-blue-700">Enter Applicant Details</h2>
       
       <form id="predictionForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <input name="finyear" placeholder="Year (e.g. 2023)" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="lgdstatecode" type="number" placeholder="State Code" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="statename" placeholder="State Name" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="lgddistrictcode" type="number" placeholder="District Code" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="districtname" placeholder="District Name" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totalbeneficiaries" type="number" placeholder="Total Beneficiaries" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totalmale" type="number" placeholder="Total Male" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totalfemale" type="number" placeholder="Total Female" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totaltransgender" type="number" placeholder="Total Transgender" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totalsc" type="number" placeholder="Total SC" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totalst" type="number" placeholder="Total ST" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totalgen" type="number" placeholder="Total General" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totalobc" type="number" placeholder="Total OBC" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totalaadhaar" type="number" placeholder="Total Aadhaar" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <input name="totalmobilenumber" type="number" placeholder="Total Mobile" required
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <input name="finyear" placeholder="Year (e.g. 2023)" required class="input-style" />
+        <input name="lgdstatecode" type="number" placeholder="State Code" required class="input-style" />
+        <input name="statename" placeholder="State Name" required class="input-style" />
+        <input name="lgddistrictcode" type="number" placeholder="District Code" required class="input-style" />
+        <input name="districtname" placeholder="District Name" required class="input-style" />
+        <input name="totalbeneficiaries" type="number" placeholder="Total Beneficiaries" required class="input-style" />
+        <input name="totalmale" type="number" placeholder="Total Male" required class="input-style" />
+        <input name="totalfemale" type="number" placeholder="Total Female" required class="input-style" />
+        <input name="totaltransgender" type="number" placeholder="Total Transgender" required class="input-style" />
+        <input name="totalsc" type="number" placeholder="Total SC" required class="input-style" />
+        <input name="totalst" type="number" placeholder="Total ST" required class="input-style" />
+        <input name="totalgen" type="number" placeholder="Total General" required class="input-style" />
+        <input name="totalobc" type="number" placeholder="Total OBC" required class="input-style" />
+        <input name="totalaadhaar" type="number" placeholder="Total Aadhaar" required class="input-style" />
+        <input name="totalmobilenumber" type="number" placeholder="Total Mobile" required class="input-style" />
 
         <button type="submit"
                 class="col-span-1 md:col-span-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition mt-2">
@@ -94,7 +78,6 @@
     </div>
   </section>
 
-  <!-- JS to handle form submission -->
   <script>
     document.getElementById("predictionForm").onsubmit = async function (e) {
       e.preventDefault();
@@ -130,5 +113,19 @@
       }
     };
   </script>
+
+  <style>
+    .input-style {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 0.375rem;
+      outline: none;
+      transition: box-shadow 0.3s ease;
+    }
+    .input-style:focus {
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+    }
+  </style>
 </body>
 </html>
