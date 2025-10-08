@@ -5,9 +5,7 @@ import requests
 app = Flask(__name__, template_folder="templates")
 CORS(app)
 
-# 🔐 IBM Cloud Credentials - HARDCODED for now (replace with os.getenv later)
-API_KEY = "4iRD3jeiJkvG1Vh_8m8PMTsZUFf2ecbIroQExE2R0SiK"
-DEPLOYMENT_URL = "https://au-syd.ml.cloud.ibm.com/ml/v4/deployments/c6818797-652c-4391-9842-f8cbf84afd2a/predictions?version=2021-05-01"
+
 
 # 🌐 Basic route
 @app.route("/")
